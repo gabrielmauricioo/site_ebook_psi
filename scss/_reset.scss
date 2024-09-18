@@ -1,0 +1,44 @@
+@import'variables';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Sora", sans-serif;
+  // font-family: 'Space Grotesk', sans-serif;
+  color: #ffffff ;
+  
+  
+}
+
+body{
+  background-color: #1E1E1E;
+}
+
+
+html{
+  font-size: 62.5%;
+  
+ 
+}
+
+// img{
+//   width: 100%;
+//   display: block;
+// }
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+button{
+  all: unset;
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+

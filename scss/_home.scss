@@ -1,0 +1,428 @@
+.s-hero{
+  padding-top: 8rem;
+  .hero-content{
+    @include flexCenterJustify;
+  }
+  .left{
+    width: 100%;
+    max-width: 60.4rem;
+    h1{
+      font-size: 6.4rem;
+      font-weight: 600;
+      margin-bottom: 2.4rem;
+      line-height: 120%;
+    }
+    h4{
+      width: 100%;
+      max-width: 57.5rem;
+      font-size: 2.4rem;
+      font-weight: 200;
+      margin-bottom: 4rem;
+      line-height: 150%;
+
+    }
+    
+  }
+
+  @include respo('laptop'){   
+    padding-top: 4rem;
+    .hero-content{
+      padding-bottom: 5rem;
+      .left{ 
+        margin-left: 6rem;
+        margin-right: 6rem;
+        max-width: 55rem;
+        h1{
+          font-size: 5rem;
+          width: 48rem;                                      
+        }
+        h4{
+          font-size: 2rem;
+        }
+      }
+      .right{
+        img{
+          width: 104%;
+          margin-left: -2rem;
+        }
+      }
+    }
+
+  }
+  @include respo('tablet'){
+    .hero-content{
+      .left{
+        h1{
+          font-size: 4rem;
+          width: 100%;
+          max-width: 408px;
+          margin-bottom: 1.2rem;
+                                               
+        }
+        h4{
+          font-size: 1.4rem;
+        }
+      }
+      .right{
+        margin-right: 3rem;
+        img{
+          width: 127%;
+          margin-left: -3rem;
+          
+        }
+      }
+    }
+  }
+
+  @include respo('mobile'){
+    .hero-content{
+      @include flex-mobile;
+      justify-content: center;
+      text-align: center;
+      .left{
+        h4{
+          margin-left: 2.2rem;
+          width: 100%;
+          max-width: 35.1rem;
+        }
+      }
+      .right{
+        margin-top: 2rem;
+        img{
+          width: 100%;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+  @include respo('mobile2'){
+    .hero-content{
+      @include flex-mobile;
+      justify-content: center;
+      text-align: center;
+      .left{
+        h1{
+          width: 100%;
+          
+        }
+        h4{
+          margin-left: 0rem;
+          width: 100%;
+          max-width: 38rem;
+        }
+      }
+      .right{
+        margin-top: 2rem;
+        img{
+          width: 100%;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+
+  
+}
+
+.s-subhead{
+  background-color: #ffffff;
+  .hero-content{
+    display: flex;
+    align-items: center;
+      justify-content: center;
+    h4{
+      color: #000000;
+      font-size: 2.4rem;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+      max-width: 112.1rem;
+      padding: 6rem 0;
+    }
+  }  
+  @include respo('laptop'){   
+    .hero-content{
+      h4{
+        width: 100%;
+        max-width: 100rem;
+        font-size: 2.4rem;
+      }
+    }
+    
+
+  }
+  @include respo('tablet'){
+    .hero-content{
+      h4{
+        width: 100%;
+        max-width: 77rem;
+        font-size: 2rem;
+      }
+    }
+
+  }
+  @include respo('mobile'){
+    .hero-content{
+      h4{
+        width: 100%;
+        max-width: 39.6rem;
+      }
+    }
+  }
+}
+
+.s-card{
+  padding: 8.9rem 0;
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3{
+      text-align: center;
+      width: 100%;
+      max-width: 103.1rem;
+      font-size: 3.2rem;
+      margin-bottom: 8rem;
+
+    }
+  }
+  @include respo('laptop'){
+    .hero-content{
+      h3{
+        font-size: 3rem;
+        margin-bottom: 4.2rem;
+      }
+
+    }
+  }
+  @include respo('tablet'){
+    .hero-content{
+      h3{
+        font-size: 2.4rem;
+
+      }
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      h3{
+        font-size: 2.4rem;
+        margin-bottom: 6.2rem;
+      }
+    }
+  }
+}
+
+.s-benefit{
+  background-color: #ffffff;
+  padding: 5rem 0;
+  .hero-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    h3{
+      font-size: 3.2rem;
+      font-weight: 700;
+      width: 100%;
+      max-width: 47rem;
+      color: #000000;
+      margin-bottom: 2.4rem;
+    }
+  }
+  @include respo('tablet'){
+    .hero-content{
+      .left{
+        width: 100%;
+        max-width: 40rem;
+        margin-left: 2rem;
+        h3{
+          font-size: 3rem;
+        }
+
+
+      }
+      
+      .right{
+        img{
+          width: 100%;
+          max-width: 40rem;
+          
+        }
+      }
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      @include flex-mobile;
+      .left{
+        margin-bottom: 4.3rem ;
+        h3{
+          // text-align: center;
+          font-size: 2.6rem;
+        }
+      }
+    }
+  }
+}
+
+.s-price{
+  padding-top: 9rem;
+  .hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 10rem;
+    h3{
+      margin-bottom: 2.4rem;
+      font-size: 3.2rem;
+      font-weight: 600;
+      width: 100%;
+      max-width: 48.4rem;
+    }
+    
+  }
+  @include respo('laptop'){
+    .hero-content{
+      gap: 4rem;
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      @include flex-mobile;
+      h3{
+        text-align: center;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+.s-testimony{
+  padding-top: 10rem;
+  .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h3{
+      font-size: 3.2rem;
+      width: 100%;
+      max-width:48.4rem ;
+    }
+    .testimony-card{
+      margin: 8.4rem 0;
+      display: flex;
+      gap: 2.4rem;
+    }
+    
+
+  }
+  @include respo('laptop'){
+    .hero-content{
+      width: 100%;
+      .testimony-card{
+        img{
+          max-width: 30rem;
+          width: 100%;
+          
+        }
+      }
+
+    }
+  }
+  @include respo('tablet'){
+    .hero-content{
+      width: 100%;
+      .testimony-card{
+        img{
+          max-width: 22rem;
+          width: 100%;
+          
+        }
+      }
+
+    }
+  }
+  @include respo('mobile'){
+    .hero-content{
+      @include flex-mobile;
+      h3{
+        font-size: 2.6rem;
+        width: 100%;
+        max-width: 37.3rem
+      }
+      .testimony-card{
+        @include flex-mobile;
+        img{
+          max-width: 34rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+  @include respo('mobile2'){
+    .hero-content{
+      @include flex-mobile;
+      h3{
+        font-size: 2.6rem;
+        width: 100%;
+        max-width: 37.3rem
+      }
+      .testimony-card{
+        @include flex-mobile;
+        img{
+          max-width: rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+footer{
+  background: #ffffff;
+  width: 100%;
+  .hero-content{
+    padding: 3rem;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    gap: 1.2rem;
+    p{
+      color: #000000;
+      font-size: 1.6rem;
+    }
+    span{
+      color: #000000;
+      font-size: 1.6rem;
+      font-weight: 200;
+      a{
+        display: inline;
+        color: #000000;
+      }
+    }
+  }
+
+  @include respo('mobile'){
+    .hero-content{
+      p{
+        font-size: 1.4rem;
+      }
+      span{
+        font-size: 1.4rem;
+      }
+    }
+  }
+  
+}
+
+
+
+

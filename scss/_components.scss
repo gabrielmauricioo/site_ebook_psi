@@ -1,0 +1,234 @@
+.btn-primario{
+  border-radius: 15px;
+  display: inline-block;
+  padding: 2rem 6.7rem;
+  font-weight: 700;
+  font-size: 2rem;
+  background: $green-10;
+  transition: background-color .5s ease;
+   &:hover{
+    background-color: #2DC108;
+ }
+ @include respo('tablet'){
+  padding: 2rem 3.2rem;
+  font-size: 1.6rem;
+ }
+ @include respo('mobile'){
+  padding: 1.6rem 2rem;
+  font-size: 1.4rem;
+
+ }
+
+}
+
+.btn-secundario{
+  border-radius: 20px;
+  display: inline-block;
+  padding: 1.5rem 2.6rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  background: $green-10;
+  transition: background-color .5s ease;
+   &:hover{
+    background-color: #2DC108;
+ }
+
+ @include respo('tablet'){
+  font-size: 1.8rem;
+  padding: 1.5rem 2rem;
+  
+ }
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.4rem;
+  .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 38rem;
+    h4{
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 1.2rem;
+      margin-top: 2rem;
+    }
+    p{
+      font-size: 1.6rem;
+      text-align: center;
+      font-weight: 200;
+    }
+  }
+  @include respo('laptop'){
+    .cards{
+      width: 100%;
+      max-width: 33.3rem;
+    }
+    h4{
+      font-size: 2rem;
+      
+    }
+    p{
+      
+    }
+  }
+  @include respo('tablet'){
+    .cards{
+      width: 100%;
+      max-width: 33.3rem;
+      h4{
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.6rem;
+      }
+    }
+  }
+  @include respo('mobile'){
+    @include flex-mobile;
+    .cards{
+      margin-bottom: 5.2rem;
+      h4{
+        font-size: 2.2rem;
+      }
+      p{
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.check{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: .8rem;
+  margin-top: 2rem;
+  p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 100%;
+    max-width: 41.5rem;
+    color: #000000;
+  }
+  @include respo('tablet'){
+    font-size: 1.6rem;
+  }
+  @include respo('mobile'){
+    img{
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+}
+
+.check-2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: .8rem;
+  margin-top: 2rem;
+  p{
+    font-size: 1.6rem;
+    font-weight: 200;
+    width: 37rem;
+  }
+  @include respo('mobile'){
+    p{
+      width: 31rem;
+    }
+  }
+}
+
+.card-price{
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  border-radius: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .text{
+    margin-bottom: 3.2rem;
+    h4{
+      font-size: 2.4rem;
+      color: #000000;
+      margin-bottom: 2.4rem;
+    }
+    p{
+      font-size: 1.6rem;
+      font-weight: 200;
+      color: #000000;
+      s{
+        color: #000000;
+      }
+    }
+    
+  }
+  h4{
+    font-size: 6.4rem;
+    color: #000000;
+    margin-bottom: 1.2rem;
+  }
+  p{
+    font-size: 1.2rem;
+    max-width: 37.2rem;
+    width: 100%;
+    color: #000000;
+
+  }
+  img{
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+  }
+
+  @include respo('tablet'){
+    padding: 4rem 5rem;
+    h4{
+      font-size: 5.2rem;
+    }
+    .text{
+      margin-bottom: 1.2rem;
+      h4{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+
+ 
+
+  @include respo('mobile2'){
+    padding: 4rem 2rem;
+    h4{
+      font-size: 4rem;
+    }
+    .text{
+      margin-bottom: 1.2rem;
+      h4{
+        font-size: 2.4rem;
+        
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
